@@ -1,0 +1,17 @@
+{
+  "seed": {
+    "id": "rulebook-docs",
+    "displayName": "Documentation",
+    "tagline": "Markdown, RuleSpeak and an explainer graph of your rulebook.",
+    "description": "Adds a docs/ folder built from the project's rulebook on every build: Markdown documentation of every table, field and rule; business-readable RuleSpeak statements (Markdown and HTML); and the interactive explainer DAG that shows how each derived value is computed.",
+    "kind": "child",
+    "category": "docs",
+    "stack": "Markdown, RuleSpeak, HTML",
+    "requiresInput": null,
+    "mountPath": "docs",
+    "requires": null,
+    "sortOrder": 210
+  },
+  "subSeeds": [],
+  "replacements": []
+}

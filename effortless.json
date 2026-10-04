@@ -1,0 +1,36 @@
+{
+  "SSoTmeProjectId": "5eba76d5-09a6-4c12-8db3-d222b6ed7c3c",
+  "Name": "rulebook-docs",
+  "Description": "Documentation add-in: Markdown, RuleSpeak and the explainer DAG, built from the project's rulebook.",
+  "ProjectSettings": [],
+  "ProjectTranspilers": [
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-markdown",
+      "RelativePath": "/markdown",
+      "CommandLine": "rulebook-to-markdown -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
+      "IsDisabled": false,
+      "Description": "Human-readable documentation of every table, field and rule"
+    },
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-rulespeak",
+      "RelativePath": "/rulespeak",
+      "CommandLine": "rulebook-to-rulespeak -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
+      "IsDisabled": false,
+      "Description": "Business-readable RuleSpeak statements of every rule"
+    },
+    {
+      "IsSSoTTranspiler": false,
+      "Name": "rulebook-to-explainer-dag",
+      "RelativePath": "/explainer-dag",
+      "CommandLine": "rulebook-to-explainer-dag -i ../../effortless-rulebook/effortless-rulebook.json -w 540000",
+      "IsDisabled": false,
+      "Description": "Interactive dependency graph of every derived value"
+    }
+  ],
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "CurrentPath": null,
+  "SSoTmeProjectFiles": null
+}
