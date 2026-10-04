@@ -1,7 +1,7 @@
 # Documentation add-in (`rulebook-docs`)
 
 An Effortless **add-in seed** (kind `child`). It is mounted into an existing
-Effortless project at `docs/` and has no rulebook of its own: every step reads
+Effortless project at `reference/` (not `docs/`: the root seeds already write their own `docs/`) and has no rulebook of its own: every step reads
 the project's `../../effortless-rulebook/effortless-rulebook.json`.
 
 ## What the build produces
@@ -19,9 +19,9 @@ All three are generated; change the rulebook and rebuild, never edit them.
 Add it to a project from the Effortless catalog, or by hand:
 
 ```bash
-effortless cloneSeed effortlessapi/erb-seed-rulebook-docs docs
-rm -rf docs/.git
-cd docs && effortless build
+effortless cloneSeed effortlessapi/erb-seed-rulebook-docs reference
+rm -rf reference/.git
+cd reference && effortless build
 ```
 
 No questions, no credentials.
